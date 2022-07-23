@@ -16,7 +16,7 @@
 
                         <a class="nav-item">About Me</a>
                         <a class="nav-item">Resume</a>
-                        <a class="nav-item">My Work</a>
+                        <a class="nav-item" href="#mywork">My Work</a>
                         <a class="nav-item">Contact</a>
 
                 </nav>
@@ -31,61 +31,61 @@
                 <img class="heroimg" src="Images/Hero image.png">
             </section>
             <!-- My UX Skills section coded using CSS flex -->
-
-                <section class="myskills">
-                    <h1>
+  <h1>
                         My Skills
                     </h1>
+                <section class="myskills">
+                  
                     <div class="flexcontainer">
-                        <img> <img src="Images/UI.jpeg" alt="UX"></img>
+                         <img src="Images/UI.jpeg" alt="UX" width="200px">
                         <h3>UI</h3>
                         <p>Figma, XD, Prototyping</p>
                     </div>
 
                     <div class="flexcontainer">
-                        <img> <img src="Images/UX.webp" alt=""></img>
+                        <img src="Images/UX.webp" alt="" width="200px">
                         <h3>UX</h3>
                         <p>User interviews,....</p>
                     </div>
 
                     <div class="flexcontainer">
-                        <img><img src="Images/Front End.jpeg" alt=""></img>
+                        <img src="Images/Front End.jpeg" alt="" width="200px">
                         <h3>Front End</h3>
                         <p>Html, Css, java</p>
                     </div>
 
                 </section>
                 <!--My Work Section Constructed using CSS Grid -->
-                <section class="MyWork">
+                <section class="MyWork" id="mywork">
                     <h1>My Work</h1>
                     <div class="workgrid">
 
-                        <div>
-                            <img> <img src="Images/casestudy.jpg">
-                        </div>
-                        <div>
+                        <div class="casestudy1">
+                            <img src="Images/casestudy.jpg">
+                            <div>
                             <h4>ArtSpace</h4>
-                            <p>ArtSpace</p>
                             <button>View Project</button>
                         </div>
-
-                        <div>
-                            <img> <img src="Images/casestudy.jpg">
                         </div>
-                        <div>
+                        
+
+                        <div class="casestudy2">
+                            <img src="Images/casestudy.jpg">
+                            <div>
                             <h4>Redfiners</h4>
-                            <p></p>
                             <button>View project</button>
                         </div>
-
-                        <div>
-                            <img> <img src="Images/casestudy.jpg">
                         </div>
-                        <div>
+                        
+
+                        <div class="casestudy3">
+                            <img src="Images/casestudy.jpg"> 
+                            <div>
                             <h4>Travelify</h4>
-                            <p></p>
                             <button>View Project</button>
                         </div>
+                        </div>
+                       
 
                     </div>
                     <h3>View All Projects</h3>
@@ -117,4 +117,7 @@
             
 
     </body>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="js/index.js"></script>
 </html>

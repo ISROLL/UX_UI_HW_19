@@ -1,3 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 header{
     display: flex;
     justify-content: space-around;
@@ -49,18 +58,31 @@ footer{
     margin: 0% 2%;
 }
 
-.flexcontainer{
+.myskills{
 display: flex;
-width: 33%;
-margin: auto;
 padding: 10px;
-flex-direction: ;
+justify-content: space-around;
 }
 
-.workgrid{
-display: grid;
-grid-template-areas: myarea myarea myarea myarea;
+h1{
+    margin: auto;
 }
+
+.workgrid {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "casestudy1 casestudy2 casestudy3";
+  }
+  
+  .casestudy1 { grid-area: casestudy1; }
+  
+  .casestudy2 { grid-area: casestudy2; }
+  
+  .casestudy3 { grid-area: casestudy3; }
 
 
 
